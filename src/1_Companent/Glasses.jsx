@@ -7,7 +7,7 @@ export const Glasses = ({ product }) => {
         <div className="container">
             <div className='row mt-5'>
                 <div className="col-sm-6 d-flex justify-content-center">
-                    <div className="card card-1 justify-content-center w-50">
+                    <div className="card justify-content-center w-50">
                         <img className="card-img-top" src='./glassesImage/model.jpg' alt="Model" />
                         <img className="card-glasses img-fluid w-50" src="./glassesImage/v1.png" alt="" />
                         <div className="card-body vg-glasses">

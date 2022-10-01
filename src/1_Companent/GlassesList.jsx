@@ -1,19 +1,21 @@
 
 export const GlassesList = ({ products, onSelect }) => {
-  
-  return (
-    <div className='mt-4 bg-light'>
-                <div className='row mt-2'>
+
+    return (
+        <div className="container">
+            <div className='mt-4 bg-light'>
+                <div className='row'>
                     {products.map((product => {
                         return (
-                            <div key={product.id} className="col-sm-2 p-1">
+                            <div key={product.id} className=" mx-auto col-1 px-2">
                                 <button onClick={() => onSelect(product)}>
-                                    <img className='img-fluid' src={product.url} alt="#" />
+                                    <img className='img-fluid w-50' src={product.url} alt="#" />
                                 </button>
                             </div>
                         )
                     }))}
                 </div>
             </div>
-  )
+        </div>
+    )
 }

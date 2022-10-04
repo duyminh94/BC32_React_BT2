@@ -4,6 +4,7 @@ import Header from './Header'
 import data from './dataGlasses.json'
 import './home.css'
 import { GlassesList } from './GlassesList'
+import { GlassesDetail } from './GlassesDetail'
 
 export default class Home extends Component {
     ChangeGlasses = (product) => {
@@ -23,10 +24,13 @@ export default class Home extends Component {
         return (
             <div className='BG-Glasses'>
                 <Header />
-                <div className='row'>
-                <Glasses product={this.state.datasGlasse} />
-                <GlassesList products={data} onSelect={this.ChangeGlasses} />
+                <div className='container'>
+                    <div className='row mt-5'>
+                        <Glasses />
+                        <GlassesDetail product={this.state.datasGlasse} />
+                    </div>
                 </div>
+                <GlassesList products={data} onSelect={this.ChangeGlasses} />
             </div>
         )
     }

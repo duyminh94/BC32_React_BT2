@@ -3,7 +3,7 @@ export const GlassesList = ({ products, onSelect }) => {
 
     return (
         <div className="container">
-            <div className='mt-4 bg-dark'>
+            <div className='mt-4 bg-light'>
                 <div className="row">
                     {products.map((product => {
                         return (
